@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+   <title>Smart System</title>
+</head>
+
+<body>
+
+    <main id="logform">
+        <div class="container">
+            <form action="" class="py-5">
+                <h1>Login Form:</h1>
+
+                <div class="form-group">
+                    <label>User Email</label>
+                    <input type="email" class="form-control" id="useremail">
+                </div>
+
+                <div class="form-group my-5">
+                    <label>User Password</label>
+                    <input type="password" class="form-control" id="userpass">
+                </div>
+
+                <button id="logbtn" class="btn btn-primary">Login</button>
+            </form>
+
+            <div id="errMess" class="alert alert-danger p-2 d-none">Invalid Email Or Password</div>
+            <div id="succMess" class="alert alert-success p-2 d-none">Login Successfully</div>
+           
+        </div>
+    </main>
+
+    <section id="test" class="d-none">
+        <div class="container">
+            <div class="form-group py-5">
+                <label>Enter Number Of Questions:</label>
+                <input type="number" class="form-control my-3" id="questionsNum">
+            </div>
+
+            <button class="btn btn-primary" id="strTestBtn">Start Test</button>
+
+            <div id="testScreen"></div>
+                 <button id="logoutBtn" class="btn btn-danger my-3 d-none">Logout</button>
+           
+            <div id="resultBox" class="alert alert-info mt-3 d-none"></div>
+        </div>
+    </section>
+
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/main.js"></script>
+</body>
+
+</html>
